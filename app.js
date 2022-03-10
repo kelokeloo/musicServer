@@ -8,6 +8,10 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 const mysqlRouter = require('./routes/mysql');
 
+// mock
+const mock = require('./mock/mock')
+
+
 var app = express();
 
 // view engine setup
