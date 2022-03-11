@@ -16,11 +16,11 @@ conn.connect()
 
 
 router.get('/', function(req, res, next){
-  conn.query('select * from job', function (error, results, fields) {
-    if (error) throw error;
-    console.log('The result is: ', results[0].name);
-    res.render('mysql', {title: 'Mysql', results: results[0].name})
-  });
+  // conn.query('select * from job', function (error, results, fields) {
+  //   if (error) throw error;
+  //   console.log('The result is: ', results[0].name);
+  // });
+    res.render('mysql', {title: 'Mysql', results: 'test'})
 })
 
 module.exports = router;
